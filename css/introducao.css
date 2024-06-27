@@ -1,0 +1,135 @@
+.introducao {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.introducao h1 {
+  color: #3d3d3d;
+  font-size: 4.5rem;
+  line-height: 1.25;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.introducao h1::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../img/Line\ 2.svg") no-repeat center;
+  position: absolute;
+  top: 28px;
+  left: -60px;
+}
+
+.colorido {
+  color: #2a8fef;
+}
+
+.introducao p {
+  font-size: 1.5rem;
+  color: #666666;
+}
+
+@media (max-width: 1000px) {
+  .introducao h1 {
+    font-size: 3rem;
+  }
+  .introducao h1::before {
+    top: 5px;
+    left: -60px;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .introducao h1 {
+    font-size: 2.5rem;
+  }
+  .introducao h1::before {
+    width: 30px;
+    top: -3px;
+    left: -10px;
+  }
+  .introducao p {
+    font-size: 1rem;
+  }
+  .introducao img {
+    width: 250px;
+  }
+}
+@media (max-width: 600px) {
+  .introducao img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .introducao {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+  .introducao img {
+    display: none;
+  }
+  .introducao h1 {
+    font-size: 3rem;
+  }
+  .introducao h1::before {
+    width: 30px;
+    top: 5px;
+    left: -10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .introducao h1 {
+    font-size: 3rem;
+  }
+  .introducao {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+  .introducao img {
+    display: none;
+  }
+  .introducao p {
+    font-size: 1rem;
+  }
+
+  .introducao h1::before {
+    width: 30px;
+    top: 4px;
+    left: -10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .introducao h1 {
+    font-size: 2.5rem;
+  }
+  .introducao {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+  .introducao img {
+    display: none;
+  }
+  .introducao p {
+    font-size: 1rem;
+  }
+
+  .introducao h1::before {
+    width: 30px;
+    top: -4px;
+    left: -10px;
+  }
+}
